@@ -36,9 +36,9 @@ pipeline {
       }
     }
 
-    stage('Custom Stage') {
+    stage('check') {
       steps {
-        myCustomStep()
+        check("${paramsnamespace}")
       }
     }
   }
