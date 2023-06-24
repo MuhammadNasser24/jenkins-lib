@@ -1,7 +1,4 @@
 @Library('jenkins-shared-library')
-
-
-
   parameters {
     // Defining my parameters
     string(name: 'VERSION', defaultValue: '1.0', description: 'Enter the version number')
