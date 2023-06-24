@@ -1,16 +1,16 @@
-@Library('jenkins-shared-library')
+@Library('jenkins-shared-library') _
 
 pipeline {
   agent any
 
   parameters {
-    // Defining my parameters
+    // Defining your parameters
     string(name: 'VERSION', defaultValue: '1.0', description: 'Enter the version number')
     choice(name: 'ENVIRONMENT', choices: ['dev', 'staging', 'production'], description: 'Select the target environment')
   }
 
   environment {
-    // Defining my environment variables
+    // Defining your environment variables
     MY_VARIABLE = 'some value'
   }
 
