@@ -1,6 +1,10 @@
 @Library('jenkins-shared-library')
+
+pipeline {
+  agent any
+
   parameters {
-    // Defining my parameters here
+    // Defining my parameters
     string(name: 'VERSION', defaultValue: '1.0', description: 'Enter the version number')
     choice(name: 'ENVIRONMENT', choices: ['dev', 'staging', 'production'], description: 'Select the target environment')
   }
