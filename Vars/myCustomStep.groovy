@@ -1,4 +1,4 @@
 def call() {
-  //print a message
+  // Print a message
   println "Hello from the custom step!"
 }
