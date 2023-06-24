@@ -1,7 +1,6 @@
 @Library('jenkins-shared-library')
 
-pipeline {
-  agent any
+
 
   parameters {
     // Defining my parameters
